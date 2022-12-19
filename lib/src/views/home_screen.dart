@@ -3,17 +3,17 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:news_api/src/controllers/news_controller.dart';
 import 'package:readmore/readmore.dart';
-
+import 'package:news_api/src/widgets/app_drawer.dart';
 import '../widgets/app_text.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  // ignore: avoid_renaming_method_parameters
   Widget build(BuildContext context, WidgetRef ref) {
     final viewModel = ref.watch(getDataFuture);
     return Scaffold(
+        drawer: const AppDrawer(),
         appBar: AppBar(
           backgroundColor: Colors.deepOrange,
           title: const AppText(
