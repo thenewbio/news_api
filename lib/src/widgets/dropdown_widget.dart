@@ -11,7 +11,7 @@ class DropdownWidget extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(
             color: white, borderRadius: BorderRadius.circular(12)),
-        height: 50,
+        height: 40,
         width: 150,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

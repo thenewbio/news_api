@@ -27,17 +27,17 @@ class CardWidget extends StatelessWidget {
       height: height,
       width: double.maxFinite,
       child: Card(
-        color: lowGrey,
+        color: Colors.white,
         elevation: 2,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(left: 18),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               AppText(
                 text: text,
                 size: size,
-                weight: FontWeight.bold,
+                weight: FontWeight.w800,
               ),
               CupertinoSwitch(
                   activeColor: color,
